@@ -1,6 +1,6 @@
 ## 绕canvas前端压缩图片的嵌入脚本
 ## 1.一般白名单不允许shell类的，但是如果有html尝试嵌入xss到png的来进行dom型xss
-## 2.普通的图片直接base64编码是无法绕过检测的(可能和后端检测特征有关),同时还对base64解码有要求
+## 2.普通的图片直接base64编码是无法绕过检测的(可能和后端检测特征有关),同时还对base64解码有要求，不是直接里面塞一句话编码就可以的
 ## 最后发现这样是可以绕过的。
 from PIL import Image
 from PIL.PngImagePlugin import PngInfo
